@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "pages/presentations.html",
+    "href": "pages/presentations.html",
+    "title": "Oral",
+    "section": "",
+    "text": "Oral\n\nName of Meeting (NoM) City (09/2026)\nTitle of Presentation\n\n\nName of Conference 2026. City (08/2026)\nTitle of Presentation\n\n\n\nPoster\n\nName of Meeting (NoM) City (01/2023)\nTitle of Poster\n\n\nName of Conference 2026. City (08/2026)\nTitle of Poster"
+  },
+  {
+    "objectID": "pages/research.html",
+    "href": "pages/research.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Publications\n\nPaper Name\nYour Name, Author 2 Name, Author 3 Name.\nAccepted at Venue\narXiv, presentation, code\n\n\nPublished Paper Name\nYour Name, Author 2\n5th conference on Great Statistic (CoGS), 2030.\npaper, presentation, poster, code, notebook"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Your Name",
+    "section": "",
+    "text": "About\nI am a NUMBER year PhD student at the chair of Mathematical Statistics at TUM. I am very fortunate to be supervised by Mathias Drton and funded through FUNDING.\nBefore, I was [background].\nMy research focuses on [details]. My perspective has been shaped by [work].\nCurriculum Vitae (01/2002)\n\n\nInterest\n\nGraphical Models\nInterest 2\n\n\n\nEducation\n\n(expected winter / 2003) PhD in Mathematical Statistics, Advisor: Mathias Drton, TU Munich, Germany\nMaster [in Mathematics], 2002, University, Country  Visiting Student, 2003 - 2004, University Exchange, Country\nBachelor [in Mathematics], 2000, University, Country\n\n\n\nExperience\n\nInternship / Role, 1998 – 1999, Company, City"
+  },
+  {
+    "objectID": "pages/teaching.html",
+    "href": "pages/teaching.html",
+    "title": "Teaching Assistant",
+    "section": "",
+    "text": "Teaching Assistant\n\nLecture Name 1\nSummer 2001\n\n\nLecture Name 2\nWinter 2002\n\n\n\nMaster Students\n\nTitle of Thesis 1\nStudent Name. Summer 2003\n\n\nTitle of Thesis 2\nStudent Name 2. Winter 2004"
+  }
+]

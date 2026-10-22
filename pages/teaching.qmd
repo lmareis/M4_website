@@ -1,0 +1,25 @@
+---
+format: html 
+---
+<style>
+h4 a {
+  display: none !important;
+}
+</style>
+
+# Teaching Assistant 
+
+#### Lecture Name 1
+Summer 2001
+
+#### Lecture Name 2
+Winter 2002
+
+
+# Master Students
+
+#### Title of Thesis 1
+Student Name. Summer 2003
+
+#### Title of Thesis 2
+Student Name 2. Winter 2004

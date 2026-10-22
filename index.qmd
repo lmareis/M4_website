@@ -1,0 +1,48 @@
+---
+title: "Your Name"
+subtitle: "Mathematical Statistician"
+image: "images/Picture.png"
+execute: 
+  echo: false
+  warning: false
+about:
+  template: trestles
+  links:
+    - icon: github
+      href: https://github.com/yourname
+    - icon: linkedin
+      href: https://linkedin.com/in/your_linkedin_page
+    - text: '<i class="ai ai-orcid fa-lg"></i>'
+      href: https://orcid.org/0000-0000-0000-0000
+    - text: '<i class="ai ai-google-scholar fa-lg"></i>'
+      href: https://scholar.google.com/yourname
+---
+
+### About
+
+I am a NUMBER year PhD student at the chair of Mathematical Statistics at TUM. I am very fortunate to be supervised by [Mathias Drton](https://www.math.cit.tum.de/math/personen/professuren/drton-mathias/) and funded through [FUNDING](https://funding_website). 
+
+Before, I was [background].
+
+My research focuses on [details]. My perspective has been shaped by [work].
+
+[Curriculum Vitae (01/2002)](content/cv/cv.pdf)
+
+### Interest
+
+* Graphical Models
+
+* Interest 2
+
+### Education
+
+* (expected winter / 2003) PhD in Mathematical Statistics, Advisor: Mathias Drton, *TU Munich, Germany*
+
+* Master [in Mathematics], 2002, *University, Country* <br>
+Visiting Student, 2003 - 2004, *University Exchange, Country*
+
+* Bachelor [in Mathematics], 2000, *University, Country*
+
+### Experience 
+
+* Internship / Role, 1998 – 1999, *Company, City*

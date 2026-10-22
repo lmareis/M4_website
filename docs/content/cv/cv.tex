@@ -1,0 +1,97 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Compile locally:  xelatex cv.tex   (uses the patched awesome-cv.cls + bundled fonts/)
+% remove active components: %gs -o cv-clean.pdf -sDEVICE=pdfwrite -dPDFSETTINGS=/prepress -dPreserveAnnots=false -dShowAnnots=false -dNOPAUSE -dBATCH cv.pdf
+
+%-------------------------------------------------------------------------------
+% CONFIGURATION
+%-------------------------------------------------------------------------------
+\documentclass[11pt, a4paper]{awesome-cv}
+\renewcommand*{\sectionstyle}[1]{{\color{awesome}\sectionstyleface{#1}}} % accent color on full section name
+\renewcommand*{\sectionstyleface}[1]{{\fontsize{16pt}{1em}\bodyfont\mdseries #1}} % thin section names
+\geometry{left=1.4cm, top=1cm, right=1.4cm, bottom=1.8cm, footskip=.5cm} % top .8cm
+
+% Accent colour. Alternatives: awesome-emerald, awesome-skyblue, awesome-red,
+% awesome-pink, awesome-orange, awesome-nephritis, awesome-concrete, awesome-darknight
+%\colorlet{awesome}{awesome-darknight}
+% Own colour example (uncomment to use):
+ \definecolor{awesome}{HTML}{960026}
+
+\setbool{acvSectionColorHighlight}{true}
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+%-------------------------------------------------------------------------------
+% PERSONAL INFORMATION
+%-------------------------------------------------------------------------------
+% Photo options: circle|rectangle, edge/noedge, left/right
+%\photo[circle,edge,right]{./profile.png}
+\name{Your}{Name}
+\position{Statistics{\enskip\cdotp\enskip}?Data Science?{\enskip\cdotp\enskip}?Machine Learning?}
+\address{Munich, Germany}
+
+\email{Your.name@tum.de}
+\homepage{yourWebsite.de}
+\github{GitHandle}
+\linkedin[Your Name]{your-name-number}
+% \googlescholar{ID}{Your Name}
+% \mobile{(+49) ...}
+
+%-------------------------------------------------------------------------------
+% Softer emphasis: Source Sans "Semibold" instead of full Bold (\key),
+% plus a small accent-coloured link marker for publications (\publink)
+%-------------------------------------------------------------------------------
+\newfontfamily\sourcesanssemibold{SourceSansPro}[
+  Path=fonts/, Extension=.otf,
+  UprightFont=*-Semibold, ItalicFont=*-SemiboldIt, BoldFont=*-Bold,
+]
+\newcommand{\key}[1]{{\sourcesanssemibold #1}}
+\newcommand{\publink}[1]{\,\href{#1}{\textcolor{awesome}{\footnotesize\faArrowUpRightFromSquare}}}
+
+% Full-width variant of cvhonors for publications: year column + text column,
+% no reserved location column (which otherwise caps lines ~2.5cm short).
+\newenvironment{cvpubs}{%
+  \vspace{\acvSectionContentTopSkip}%
+  \vspace{-2mm}%
+  \begin{center}%
+    \setlength\tabcolsep{0pt}%
+    \setlength{\extrarowheight}{0pt}%
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} C{1.5cm} L{\textwidth - 1.5cm}}%
+}{%
+    \end{tabular*}%
+  \end{center}%
+}
+% Usage: \cvpub{<venue>}{<title + authors>}{<year>}
+%\newcommand*{\cvpub}[3]{%
+%  \honordatestyle{#3} & \honorpositionstyle{#1}\ifempty{#2}{}{,} \honortitlestyle{#2} \\%
+%}
+\newcommand*{\cvpub}[3]{%
+  \honordatestyle{#3} & \ifempty{#1}{}{\honorpositionstyle{#1}, }\honortitlestyle{#2} \\%
+}
+
+%-------------------------------------------------------------------------------
+\begin{document}
+\makecvheader
+
+\makecvfooter
+  {\today}
+  {Your Name~~~·~~~Curriculum Vitae}
+  {\thepage}
+
+%-------------------------------------------------------------------------------
+% CONTENT — each section lives in its own file under sections/
+%-------------------------------------------------------------------------------
+\input{sections/profile.tex}
+\input{sections/education.tex}
+\input{sections/experience.tex} 
+\input{sections/skills.tex}
+\iftrue
+%\iffalse % if full publication list
+\input{sections/publications.tex}
+\else
+\input{sections/full_publications.tex}
+\input{sections/full_talks.tex}
+\fi
+\input{sections/additional.tex}
+\input{sections/personal.tex}
+
+\end{document}

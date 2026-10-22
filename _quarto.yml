@@ -1,0 +1,59 @@
+project:
+  type: website
+  output-dir: docs
+  preview:
+    port: 5896
+    browser: true
+  render:
+    - "index.qmd"
+    - "pages/research.qmd"
+    - "pages/teaching.qmd"
+    - "pages/presentations.qmd"
+    - "pages/404.qmd"
+  resources:
+    - "content/"
+    - "css"
+    - "splitkbcompare.html"
+    - "static/"
+    - "google4aa78e_your_google_token_file_for_indexing.html" 
+
+website:
+  title: "Your Name"
+  description: "I am a NUMBER year PhD student at the chair of Mathematical Statistics at the Technical University of Munich (TUM), under the supervision of Prof. Mathias Drton."
+  open-graph:
+    title: "Your Name"
+    description: "I am a NUMBER year PhD student at the chair of Mathematical Statistics at the Technical University of Munich (TUM), under the supervision of Prof. Mathias Drton."
+    image: images/Mareis_picture_4.jpeg
+  site-url: "https://your_website_url.de" #"https://lmareis.github.io"
+  favicon: images/favicon.png
+  search:
+    location: navbar
+    type: overlay
+  back-to-top-navigation: false
+  navbar:
+    right:
+      - text: "Research"
+        href: pages/research.qmd
+      - text: "Talks and Presentations"
+        href: pages/presentations.qmd
+      - text: "Teaching"
+        href: pages/teaching.qmd
+      - text: "CV"
+        href: content/cv/cv.pdf
+  page-footer:
+    left: 
+      - text: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="images/by-nc-sa.png" alt="CC BY-NC-SA 4.0" style="height:25px; vertical-align:top;"></a> 
+    center:
+      - text: "firstname.lastname (at) tum.de"
+    right: 
+      - text: "© 2026 Your Name"
+
+format:
+  html:
+    theme: [default, css/theme.scss]
+    anchor-sections: true
+    smooth-scroll: true
+    link-external-newwindow: true
+    link-external-icon: false
+    # This is to include fontawesome and academic icons in the headers:
+    include-in-header: "_includes/header.html"
